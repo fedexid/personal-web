@@ -40,63 +40,59 @@ const Hero = () => {
         className="relative z-10 mx-auto max-w-5xl px-6 text-center"
       >
         <motion.div variants={container} initial="hidden" animate="show">
-          <motion.p
-            variants={item}
-            className="text-violet mb-6 text-xs font-light tracking-[0.4em] uppercase"
-          >
-            Greetings!
-          </motion.p>
-
           <motion.h1
             variants={item}
-            className="section-heading glow-violet mb-6 text-[clamp(3.5rem,10vw,8rem)] leading-[0.95] tracking-tight"
+            className="section-heading text-tertiary glow-tertiary mb-6 text-[clamp(3.5rem,10vw,8rem)] leading-[0.95] tracking-tight"
           >
-            Sein
+            Greetings
           </motion.h1>
 
           <motion.p
             variants={item}
-            className="mb-4 text-[clamp(1rem,2.5vw,1.4rem)] font-light tracking-[0.08em] text-white/50"
+            className="text-tertiary mb-6 text-xs font-light tracking-[0.4em] uppercase"
           >
-            Frontend & Data
+            Welcome 👋
+          </motion.p>
+
+          <motion.p
+            variants={item}
+            className="text-tertiary/50 mb-4 text-[clamp(1rem,2.5vw,1.4rem)] font-light tracking-[0.08em]"
+          >
+            Welcome to My Personal Website
           </motion.p>
 
           <motion.div
             variants={item}
             className="flex flex-wrap items-center justify-center gap-4"
           >
-            <motion.button
+            <button
               onClick={() =>
                 document
                   .getElementById("projects")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="group grad-border relative overflow-hidden rounded-sm px-8 py-4 text-sm font-light tracking-[0.2em] uppercase"
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
+              className="group bg-secondary grad-border hover:shadow-secondary relative overflow-hidden rounded-sm px-8 py-4 text-sm font-light tracking-[0.2em] uppercase transition hover:-translate-y-2 hover:scale-105 hover:font-bold hover:shadow-lg hover:ease-in-out active:scale-95"
             >
-              <span className="relative z-10 text-white">My Projects</span>
-              <motion.span
+              <span className="text-tertiary relative z-10">My Projects</span>
+              <span
                 className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                 style={{
                   background:
                     "linear-gradient(135deg, rgba(45,212,191,0.15), rgba(167,139,250,0.15))",
                 }}
               />
-            </motion.button>
+            </button>
 
-            <motion.button
+            <button
               onClick={() =>
                 document
                   .getElementById("contact")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="rounded-sm border border-white/10 px-8 py-4 text-sm font-light tracking-[0.2em] text-white/50 uppercase transition-colors duration-300 hover:border-white/30 hover:text-white"
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.97 }}
+              className="text-tertiary hover:border-tertiary/30 hover:glass border-tertiary/10 hover:text-tertiary rounded-sm border-2 px-8 py-4 text-sm font-light tracking-[0.2em] uppercase transition-colors duration-300 hover:-translate-y-2 hover:scale-105 hover:font-bold hover:shadow-lg hover:transition hover:ease-in-out active:scale-95"
             >
               Get In Touch
-            </motion.button>
+            </button>
           </motion.div>
         </motion.div>
 
@@ -107,11 +103,8 @@ const Hero = () => {
           transition={{ delay: 2 }}
           className="absolute -bottom-24 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2"
         >
-          <span className="text-[10px] tracking-[0.3em] text-white/20 uppercase">
-            Scroll Down
-          </span>
           <motion.div
-            className="h-12 w-px"
+            className="h-12 w-1"
             style={{
               background:
                 "linear-gradient(to bottom, rgba(45,212,191,0.6), transparent)",
