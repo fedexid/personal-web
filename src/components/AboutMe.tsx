@@ -17,15 +17,6 @@ const AboutMe = () => {
 
   return (
     <div ref={ref} className="relative overflow-hidden py-32">
-      {/* Aurora accent */}
-      <div
-        className="pointer-events-none absolute bottom-0 left-0 h-125 w-125 opacity-10"
-        style={{
-          background: "radial-gradient(circle, var(--teal), transparent 70%)",
-          filter: "blur(80px)",
-        }}
-      />
-
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid items-center gap-16 md:grid-cols-2 lg:gap-24">
           {/* Image column */}
@@ -60,10 +51,7 @@ const AboutMe = () => {
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
-              <p
-                className="mb-4 text-2xl font-extrabold tracking-[0.4em] uppercase"
-                style={{ color: "var(--rose)" }}
-              >
+              <p className="mb-4 text-2xl font-extrabold tracking-[0.4em] uppercase">
                 About Me
               </p>
               <h2 className="section-heading mb-8 text-[clamp(2.5rem,5vw,4rem)] leading-tight text-white">
