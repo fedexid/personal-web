@@ -1,0 +1,20 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Terminal window -->
+  <rect x="8" y="12" width="48" height="40" rx="4"
+        stroke="currentColor" stroke-width="2"/>
+
+  <!-- Top bar -->
+  <line x1="8" y1="20" x2="56" y2="20"
+        stroke="currentColor" stroke-width="2"/>
+
+  <!-- Prompt arrow ">" -->
+  <path d="M18 30 L24 34 L18 38"
+        stroke="currentColor" stroke-width="2"
+        fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Cursor line -->
+  <line x1="28" y1="38" x2="40" y2="38"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

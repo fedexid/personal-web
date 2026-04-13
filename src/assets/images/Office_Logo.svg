@@ -1,0 +1,26 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Outer app window -->
+  <rect x="8" y="10" width="48" height="44" rx="6"
+        stroke="currentColor" stroke-width="2"/>
+
+  <!-- Top bar -->
+  <line x1="8" y1="18" x2="56" y2="18"
+        stroke="currentColor" stroke-width="2"/>
+
+  <!-- Grid (representing office apps) -->
+  <rect x="16" y="24" width="10" height="10" rx="2"
+        stroke="currentColor" stroke-width="2"/>
+  <rect x="38" y="24" width="10" height="10" rx="2"
+        stroke="currentColor" stroke-width="2"/>
+
+  <rect x="16" y="40" width="10" height="10" rx="2"
+        stroke="currentColor" stroke-width="2"/>
+  <rect x="38" y="40" width="10" height="10" rx="2"
+        stroke="currentColor" stroke-width="2"/>
+
+  <!-- Center document hint -->
+  <path d="M28 28 H36 M28 32 H36 M28 36 H34"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+
+</svg>
