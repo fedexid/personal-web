@@ -2,8 +2,6 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import type { Variants } from "motion/react";
 
-import AuroraBackground from "./common/AuroraBackground";
-
 const Hero = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({

@@ -1,10 +1,12 @@
 import { motion } from "motion/react";
 
 const AuroraBackground = () => {
+  const dotColors: string[] = ["bg-primary", "bg-secondary", "bg-tertiary"];
+
   return (
     <div className="absolute inset-0 overflow-hidden">
       {/* Base gradient */}
-      <div className="absolute inset-0 bg-linear-to-b from-[#050810] via-[#07101f] to-[#050810]" />
+      <div className="to-background absolute inset-0 bg-linear-to-b from-[#050810] via-[#07101f]" />
 
       {/* Aurora blobs */}
       <motion.div
@@ -60,22 +62,16 @@ const AuroraBackground = () => {
         }}
       />
 
-      {/* Floating particles */}
+      {/* Floating particles / dots */}
       {Array.from({ length: 24 }).map((_, i) => (
         <motion.div
           key={i}
-          className="absolute rounded-full"
+          className={`absolute rounded-full ${dotColors[i % 3]}`}
           style={{
             width: Math.random() * 3 + 1,
             height: Math.random() * 3 + 1,
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
-            background:
-              i % 3 === 0
-                ? "var(--teal)"
-                : i % 3 === 1
-                  ? "var(--violet)"
-                  : "var(--rose)",
             opacity: Math.random() * 0.6 + 0.2,
           }}
           animate={{
