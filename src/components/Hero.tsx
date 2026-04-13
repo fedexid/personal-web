@@ -32,8 +32,6 @@ const Hero = () => {
       ref={ref}
       className="relative flex h-screen items-center justify-center overflow-hidden"
     >
-      <AuroraBackground />
-
       {/* Parallax content */}
       <motion.div
         style={{ y, opacity }}
