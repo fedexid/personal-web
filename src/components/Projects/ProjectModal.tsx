@@ -18,7 +18,9 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
       onClick={onClose}
     >
       <motion.div
-        layoutId={`card-${project.id}`}
+        initial={{ opacity: 0, scale: 0.92, y: 24 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.92, y: 24 }}
         className="glass w-full max-w-lg overflow-hidden rounded-3xl"
         onClick={(e) => e.stopPropagation()}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
@@ -29,7 +31,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             src={project.image}
             alt={project.name}
             className="h-full w-full object-cover"
-            layoutId={`img-${project.id}`}
           />
           <div className={`absolute inset-0 bg-linear-to-t ${project.color}`} />
           <button
@@ -78,6 +79,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             }}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
+            target="_blank"
           >
             View Project
             <span>→</span>
