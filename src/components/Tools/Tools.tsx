@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion, useInView } from "motion/react";
 import Chip from "./Chip";
 
-import React_Logo from "../../assets/images/React_logo.svg";
+import React_Logo from "../../assets/images/React_Logo.svg";
 import JS_Logo from "../../assets/images/Js_Logo.svg";
 import SQL_Logo from "../../assets/images/SQL_Logo.svg";
 import Python_Logo from "../../assets/images/Python_Logo.svg";
@@ -52,14 +52,6 @@ const Tools = () => {
 
   return (
     <div ref={ref} className="relative overflow-hidden py-32">
-      <div
-        className="pointer-events-none absolute top-1/2 right-0 h-100 w-100 opacity-8"
-        style={{
-          background: "radial-gradient(circle, var(--gold), transparent 70%)",
-          filter: "blur(80px)",
-        }}
-      />
-
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -79,7 +71,7 @@ const Tools = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="text-tertiary mb-6 text-sm font-bold tracking-[0.3em] uppercase"
+              className="mb-6 text-sm font-bold tracking-[0.3em] uppercase"
             >
               Hard Skills
             </motion.h3>

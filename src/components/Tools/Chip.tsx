@@ -5,12 +5,12 @@ const Chip = ({
   name,
   type,
   icon,
-  delay,
+  delay: _delay,
 }: {
   name: string;
   type: string;
   icon: string;
-  delay: number;
+  delay?: number;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true });
