@@ -15,19 +15,6 @@ body {
   font-family: "Google Sans Variable", sans-serif;
 }
 
-/* Hide scrollbar for cleaner look (optional) */
-.overflow-y-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-.overflow-x-scroll::-webkit-scrollbar {
-  display: none;
-}
-.overflow-y-scroll {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 /* Glass card */
 .glass {
   background: rgba(255, 255, 255, 0.03);
