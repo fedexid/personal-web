@@ -6,8 +6,10 @@ import type { Project } from "./types";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 
-import Portfolio_Cover from "../../assets/images/portfolio_cover.png";
-import Certificate_Cover from "../../assets/images/FE.png";
+import Portfolio_Cover from "../../assets/images/Portfolio_Cover.webp";
+import Certificate_Cover from "../../assets/images/FE_Cover.webp";
+import StudentPortal_Cover from "../../assets/images/StudentPortal_Cover.webp";
+import Mlr_Cover from "../../assets/images/MLR_Cover.webp";
 
 import Portfolio_File from "../../assets/pdfs/Portfolio.pdf";
 import Frontend_Certificate from "../../assets/pdfs/Frontend_Certificate.pdf";
@@ -21,8 +23,7 @@ const Projects = [
     tech: ["ReactJS", "React Router", "Tailwind CSS", "JSON-Server"],
     color: "from-teal-900/60 to-slate-900",
     accent: "var(--teal)",
-    image:
-      "https://github.com/fedexid/student-portal/blob/main/src/assets/LandingPage.png?raw=true",
+    image: StudentPortal_Cover,
     linkURL: "https://github.com/fedexid/student-portal",
   },
   {
@@ -33,8 +34,7 @@ const Projects = [
     tech: ["Python", "Pandas", "Scikit Learn", "matplotlib"],
     color: "from-teal-900/60 to-slate-900",
     accent: "var(--teal)",
-    image:
-      "https://raw.githubusercontent.com/fedexid/coffee-shop-mlr/refs/heads/master/image.png",
+    image: Mlr_Cover,
     linkURL: "https://github.com/fedexid/coffee-shop-mlr",
   },
   {
