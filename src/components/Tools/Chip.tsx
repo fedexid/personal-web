@@ -5,7 +5,7 @@ const Chip = ({
   name,
   type,
   icon,
-  delay: _delay,
+  delay,
 }: {
   name: string;
   type: string;
@@ -19,6 +19,7 @@ const Chip = ({
       ref={ref}
       initial={{ opacity: 0, scale: 0.85 }}
       animate={inView ? { opacity: 1, scale: 1 } : {}}
+      transition={{ delay }}
       className="glass flex cursor-default items-center gap-2 rounded-2xl px-4 py-3 transition-all duration-300 hover:-translate-y-1 hover:border-white/15"
     >
       {type === "image" ? (

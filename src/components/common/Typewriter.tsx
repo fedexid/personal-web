@@ -85,6 +85,7 @@ export const Typewriter: React.FC<TypewriterProps> = ({
   }, [
     displayText,
     isDeleting,
+    isTypingComplete,
     currentTextIndex,
     texts,
     typingSpeed,
