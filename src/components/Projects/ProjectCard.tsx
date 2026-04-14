@@ -27,9 +27,9 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
 
       {/* Card bottom */}
       <div className="glass -mt-1 p-5">
-        <h3 className="text-tertiary font-['Cormorant_Garamond'] text-2xl font-light">
+        <h1 className="text-tertiary font-['Cormorant_Garamond'] text-2xl font-light">
           {project.name}
-        </h3>
+        </h1>
         <p className="text-tertiary/30 mt-1 text-xs">Click for details →</p>
       </div>
     </motion.div>

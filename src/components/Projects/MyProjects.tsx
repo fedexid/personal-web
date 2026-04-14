@@ -14,7 +14,7 @@ import Frontend_Certificate from "../../assets/pdfs/Frontend_Certificate.pdf";
 
 const Projects = [
   {
-    id: "1",
+    id: 1,
     name: "Student Portal",
     description:
       "This is a React Student Portal App Project created using React + React Router and Tailwind for the styling.",
@@ -26,7 +26,7 @@ const Projects = [
     linkURL: "https://github.com/fedexid/student-portal",
   },
   {
-    id: "2",
+    id: 2,
     name: "Coffee Shop Revenue Linear Regression Analysis",
     description:
       "This is a Multiple Linear Regression Project with the goal to make model predictions that accurately will predict revenue based on factors like time period, product category, location of the store, and the day of the week.",
@@ -38,7 +38,7 @@ const Projects = [
     linkURL: "https://github.com/fedexid/coffee-shop-mlr",
   },
   {
-    id: "3",
+    id: 3,
     name: "Portfolio",
     description: "These are some of the projects that I've done",
     tech: [""],
@@ -48,7 +48,7 @@ const Projects = [
     linkURL: Portfolio_File,
   },
   {
-    id: "4",
+    id: 4,
     name: "Frontend Certificate",
     description:
       "This is a certificate in frontend engineering that I achieved",
@@ -92,11 +92,7 @@ const HorizontalScrollTrack = ({ onCardClick }: HorizontalScrollTrackProps) => {
     offset: ["start start", "end end"],
   });
 
-  // "1%" → first card fully visible on entry
-  // "-95%" → last card lands at the right edge for 7 cards at w-80/w-100
-  // Tweak the end value if you change card count or width:
-  //   end ≈ -((totalCardsWidth - viewportWidth) / viewportWidth) * 100 + "%"
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-55%"]);
 
   return (
     <section ref={trackRef} className="h-[300vh]">
