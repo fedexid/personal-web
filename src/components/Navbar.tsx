@@ -27,8 +27,8 @@ const Navbar = () => {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-500 ${
-        scrolled ? "glass border-b border-white/5 py-3" : "py-6"
+      className={`fixed top-0 right-0 left-0 z-50 ${
+        scrolled ? "glass shadow-background py-6 shadow-md" : "py-6"
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6">
@@ -38,7 +38,7 @@ const Navbar = () => {
           className="text-2xl font-light tracking-widest"
           whileHover={{ scale: 1.04 }}
         >
-          <span className="text-white">Sein</span>
+          <span className="text-tertiary">Sein</span>
         </motion.button>
 
         {/* Desktop links */}
@@ -47,11 +47,11 @@ const Navbar = () => {
             <li key={link} className="group relative">
               <button
                 onClick={() => scrollTo(link)}
-                className="text-tertiary text-sm font-light tracking-[0.12em] uppercase transition-colors duration-300 hover:text-white"
+                className="text-tertiary hover:text-tertiary text-sm font-bold tracking-[0.12em] uppercase transition-colors duration-300"
               >
                 {link}
                 {/* underline bar */}
-                <span className="absolute -bottom-1 left-0 h-px w-0 bg-linear-to-r from-teal-400 to-violet-400 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 h-1 w-0 bg-linear-to-r from-teal-400 to-violet-400 transition-all duration-300 group-hover:w-full" />
                 {active === link && (
                   <motion.span
                     layoutId="nav-indicator"
@@ -72,7 +72,7 @@ const Navbar = () => {
           {[0, 1, 2].map((i) => (
             <motion.span
               key={i}
-              className="block h-px w-6 origin-center bg-white"
+              className="bg-tertiary block h-px w-6 origin-center"
               animate={
                 open
                   ? i === 0
@@ -108,7 +108,7 @@ const Navbar = () => {
                 >
                   <button
                     onClick={() => scrollTo(link)}
-                    className="w-full border-b border-white/5 py-3 text-left text-sm tracking-[0.15em] text-white/60 uppercase transition-colors last:border-0 hover:text-white"
+                    className="border-tertiary/5 text-tertiary/60 hover:text-tertiary w-full border-b py-3 text-left text-sm tracking-[0.15em] uppercase transition-colors last:border-0"
                   >
                     {link}
                   </button>
