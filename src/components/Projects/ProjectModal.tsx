@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { motion } from "motion/react";
 
 import type { Project } from "./types";
@@ -8,6 +10,13 @@ interface ProjectModalProps {
 }
 
 const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -21,7 +30,7 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
         initial={{ opacity: 0, scale: 0.92, y: 24 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.92, y: 24 }}
-        className="glass w-full max-w-lg overflow-hidden rounded-3xl"
+        className="glass w-full max-w-lg overflow-hidden rounded-3xl md:mt-10"
         onClick={(e) => e.stopPropagation()}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       >
