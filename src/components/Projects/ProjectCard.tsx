@@ -11,9 +11,7 @@ const ProjectCard = ({ project, onClick }: ProjectCardProps) => {
   return (
     <motion.div
       onClick={onClick}
-      className="scroll-item group relative w-80 shrink-0 cursor-pointer overflow-hidden rounded-2xl md:w-100"
-      whileHover={{ y: -8, scale: 1.02 }}
-      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+      className="scroll-item group hover:102 relative w-80 shrink-0 cursor-pointer overflow-hidden rounded-2xl transition duration-300 ease-in-out hover:-translate-2 md:w-100"
     >
       {/* Image */}
       <div className="relative h-52 overflow-hidden">

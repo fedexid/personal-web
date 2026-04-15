@@ -81,13 +81,11 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
           <motion.a
             href={project.linkURL}
-            className="flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-light tracking-[0.15em] text-white uppercase"
+            className="flex w-full items-center justify-center gap-2 rounded-xl py-3.5 text-sm font-light tracking-[0.15em] text-white uppercase transition ease-in-out hover:scale-102 active:scale-98"
             style={{
               background: `linear-gradient(135deg, ${project.accent}33, ${project.accent}11)`,
               border: `1px solid ${project.accent}44`,
             }}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
             target="_blank"
           >
             View Project

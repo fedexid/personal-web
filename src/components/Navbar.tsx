@@ -35,8 +35,7 @@ const Navbar = () => {
         {/* Logo */}
         <motion.button
           onClick={() => scrollTo("Home")}
-          className="text-2xl font-light tracking-widest"
-          whileHover={{ scale: 1.04 }}
+          className="text-2xl font-light tracking-widest transition ease-in-out hover:scale-104"
         >
           <span className="text-tertiary">Sein</span>
         </motion.button>
