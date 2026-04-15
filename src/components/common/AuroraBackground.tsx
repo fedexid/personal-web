@@ -63,13 +63,13 @@ const AuroraBackground = () => {
       />
 
       {/* Floating particles / dots */}
-      {Array.from({ length: 24 }).map((_, i) => (
+      {Array.from({ length: 12 }).map((_, i) => (
         <motion.div
           key={i}
           className={`absolute rounded-full ${dotColors[i % 3]}`}
           style={{
-            width: Math.random() * 3 + 1,
-            height: Math.random() * 3 + 1,
+            width: 3,
+            height: 3,
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
             opacity: Math.random() * 0.6 + 0.2,
