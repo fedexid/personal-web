@@ -23,7 +23,12 @@ const Chip = ({
       className="glass flex cursor-default items-center gap-2 rounded-2xl px-4 py-3 transition-all duration-300 hover:-translate-y-1 hover:border-white/15"
     >
       {type === "image" ? (
-        <img className="h-8 w-8 md:h-6 md:w-6" src={icon} alt={`${icon}`} />
+        <img
+          loading="lazy"
+          className="h-8 w-8 md:h-6 md:w-6"
+          src={icon}
+          alt={`${icon}`}
+        />
       ) : (
         <span className="text-lg">{icon}</span>
       )}

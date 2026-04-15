@@ -132,7 +132,7 @@ const Tools = () => {
                   transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
                   className="text-2xl"
                 >
-                  <img src={DS_Logo} alt="Data Science Logo" />
+                  <img loading="lazy" src={DS_Logo} alt="Data Science Logo" />
                 </motion.div>
                 <div>
                   <p className="text-md text-tertiary/80 font-light">
